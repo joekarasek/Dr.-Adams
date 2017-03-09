@@ -9,7 +9,7 @@
     "joes-gulp-tasks": "^0.2.0"
   },
   "scripts": {
-    "gulp": "gulp",
+    "gulp": "gulp --tasks && gulp",
     "gulp:tasks": "gulp --tasks"
   },
   "author": "",

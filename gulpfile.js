@@ -13,7 +13,7 @@ const tasks = {
 
 joesGulpTasks(gulp, config, tasks);
 
-console.log("Tasks => ", tasks);
+// console.log("Tasks => ", tasks);
 // console.log("Config => ", config);
 
 gulp.task('clean', gulp.parallel(tasks.clean));
