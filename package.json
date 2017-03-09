@@ -1,0 +1,17 @@
+{
+  "name": "adams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "joes-gulp-tasks": "^0.2.0"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "gulp:tasks": "gulp --tasks"
+  },
+  "author": "",
+  "license": "ISC"
+}

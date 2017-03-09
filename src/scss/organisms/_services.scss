@@ -1,0 +1,74 @@
+#section-services {
+
+  //Colors
+
+
+
+  .heading {
+    text-align: center;
+    h2 {
+      color: #024378;
+      text-align: center;
+      margin-bottom: 0;
+      padding-top: $spacing-md;
+      padding-bottom: $spacing-sm;
+
+    }
+    p {
+      color: $c-grey;
+      padding-bottom: $spacing-md;
+      a {
+        @include link-color($c-teal-link);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .services--slab {
+    background-image: url('/assets/Services/cosmetic.jpg');
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @media screen and (max-width: $width-md) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #ffffff;
+      background-image: none;
+    }
+    h2 {
+      color: #3d893f;
+    }
+  }
+
+  .services-carousel {
+    h5 {
+      text-align: center;
+      color: #024378;
+      font-family: $ff-cardo;
+      font-weight: 700;
+    }
+  }
+  .services-carousel--wrapper {
+    padding: 0 60px;
+  }
+  .services-carousel--image {
+    @include hover-plus();
+  }
+
+  .service-modal-wrapper {
+    h5 {
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 200px;
+      @media screen and (max-width: $width-sm) {
+        display: none;
+      }
+    }
+    .modal-image {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+}

@@ -1,0 +1,124 @@
+#slider {
+  .swiper-slide.slide1 {
+    background-image: url('/assets/slide1.jpg');
+  }
+  .swiper-slide.slide2 {
+    background-image: url('/assets/slide2.jpg');
+  }
+  //.swiper-slide.slide3 {
+  //  background-image: url('/assets/saxton-slide3.jpg');
+  //}
+
+  .swiper-slide .row {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+  }
+
+  .slide1 {
+    h6 {
+      font-family: $ff-mont;
+      color: #636363;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    h1 {
+      @include font-size(136px, 65px, 55px, 65px, 65px);
+      color: #024378;
+      font-family: $ff-cardo;
+      font-weight: 400;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    h2 {
+      @include font-size(72px, 60px, 55px, 65px, 65px);
+      color: #3d893f;
+      font-weight: 400;
+      font-family: $ff-josef;
+      padding-left: 30px;
+    }
+    h5 {
+      font-size: 22px;
+      font-family: $ff-mont;
+      color: #5d7278;
+      text-align: right;
+      padding-right: 60px;
+    }
+    a {
+      float: right;
+    }
+  }
+  .slide2 {
+    text-align: center;
+    h2 {
+      font-family: $ff-cardo;
+      font-weight: 400;
+      color: #024378;
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+    .stars>h2 {
+      color: #f5e82e;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .copy {
+      font-family: $ff-josef;
+    }
+  }
+  //.slide3 {
+  //  h1 {
+  //    color: $c-white;
+  //    margin-bottom: 0;
+  //    font-weight: 400;
+  //    font-family: $ff-advent;
+  //    line-height: $lh-sm;
+  //  }
+  //  h2 {
+  //    color: $c-white;
+  //    font-weight: 400;
+  //    line-height: $lh-sm;
+  //    font-family: $ff-raleway;
+  //  }
+  //  h4 {
+  //    text-transform: uppercase;
+  //    color: $c-white;
+  //    font-weight:bold;
+  //    font-family: $ff-lato;
+  //    line-height: $lh-sm;
+  //    margin-bottom: $spacing-lg;
+  //  }
+  //  .btn {
+  //    @include lr-padding(80px, 60px, 60px);
+  //  }
+  //}
+
+  .icon-star3 {
+    color: $c-star;
+  }
+
+}
+
+.animated.infinite.bounce {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+}
+
+.icon-arrow-down {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10000px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+
+#mobile-background {
+  display: none;
+  @media (max-width: $width-md) {
+    display: block;
+    position: relative;
+  }
+}
