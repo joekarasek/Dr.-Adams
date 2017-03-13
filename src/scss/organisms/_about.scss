@@ -12,6 +12,9 @@
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (max-width: $width-md) {
+      padding-bottom: 0;
+    }
 
     h3 {
       font-family: $ff-lato;
@@ -122,4 +125,41 @@
       }
     }
   }
+}
+
+#meet-the-team {
+  .heading {
+    h2{
+      color: #3A5464;
+      margin-bottom: 5px;
+    }
+    p {
+      color: #535353;
+    }
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(
+                    #B7DDF4, #FFFFFF
+    );
+  }
+  .image {
+    width: 100%;
+  }
+}
+
+#video-promo {
+  padding-bottom: 60px;
+  .heading {
+    h2{
+      color: #3A5464;
+    }
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  background-image: url('./../assets/videobg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
