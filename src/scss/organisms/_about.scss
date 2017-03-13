@@ -9,17 +9,66 @@
     padding-bottom: 30px;
   }
 
-  p {
-    color: #535353;
-    &:last-child {
-      margin-bottom: 60px;
-    }
-  }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  .about__row {
+    h3 {
+      font-family: $ff-lato;
+      font-weight: 700;
+      color: #4e748a;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-family: $ff-lato;
+      font-weight: 400;
+      color: #4e748a;
+    }
+
+    p {
+      color: #535353;
+    }
 
     &--bradley-adams {
       background-image: url('./../assets/team/brad.jpg');
+      background-position: 25% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+    &--meredith-adams {
+      background-image: url('./../assets/team/meredith.jpg');
+      background-position: 70% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+    &--smith {
+      background-image: url('./../assets/team/deborah.jpg');
+      background-position: 10% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+    &--pilkington {
+      background-image: url('./../assets/team/emilee.jpg');
+      background-position: 70% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+
+    &__image--mobile {
+      width: 100%;
     }
   }
 
