@@ -3,11 +3,11 @@
 <section id="mobile-background" class="hidden-md hidden-lg">
     <h1 class="hidden">Dentistry for Jeffrey Priluck</h1>
     <a href="#" data-scrollTo="#section-specials" data-offset="0">
-        <img src="assets/slide1-mobile.jpeg" style="width:100%;height:auto;" alt="{{ doctorName }}">
+        <img src="assets/slide1-mobile.jpg" style="width:100%;height:auto;" alt="{{ doctorName }}">
     </a>
 </section>
 
-<section id="slider" class="hidden-xxs hidden-xs hidden-sm slider-parallax full-screen swiper_wrapper clearfix hidden-xs">
+<section id="slider" class="hidden-xxs hidden-xs hidden-sm slider-parallax swiper_wrapper clearfix hidden-xs">
     <div class="slider-parallax-inner">
         <div class="swiper-container swiper-parent swiper-container-horizontal">
             <div class="swiper-wrapper">
@@ -18,10 +18,9 @@
                     <div class="container clearfix slide-padding">
                         <div class="row">
                             <div class="col-sm-6 col-sm-push-6">
-                                <h6>Jeffrey G. Priluck, DMD, MAGD | Albert P. Nordone, DDS</h6>
-                                <h1>Dentistry</h1>
-                                <h2>with a Difference</h2>
-                                <h5>NOW WELCOMING NEW PATIENTS</h5>
+                                <h1>Big City<br>Dentistry,</h1>
+                                <h2>small town<br>relationships</h2>
+                                <h5>NOW WELCOMING THE WHOLE FAMILY</h5>
                                 <a href="#" class="btn" data-scrollTo="#section-specials" data-offset="60">New Patient Offers</a>
                             </div>
                         </div>
@@ -83,10 +82,7 @@
 
             </div>
         </div>
-        <div class="arrow-down--wrapper">
-            <a href="#" data-scrollto="#content" data-offset="60" class="dark one-page-arrow">
-                <img src="/assets/down_arrow.png" class="infinite animated fadeInDown" alt="down arrow">
-            </a>
-        </div>
     </div>
 </section>
+{% include 'atoms/down-arrow.twig' %}
+{% include 'organisms/call-to-action__three-to-one.twig' %}

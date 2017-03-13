@@ -7,19 +7,20 @@
 
 
 body {
-	font-family: $ff-josef;
 	color: $c-black;
 	line-height: 1.5;
+	font-family: $ff-lato;
 }
 
 p {
 	margin-bottom: $spacing-sm;
+	font-family: $ff-lato;
 }
 
 /// @group typography
 @mixin headings() {
 	line-height: 1.5;
-	font-family: $ff-cardo;
+	font-family: $ff-oswald;
 	font-weight: 400;
 }
 
