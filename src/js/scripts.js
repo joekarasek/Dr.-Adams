@@ -26,4 +26,4 @@
     ]
   });
 
-})(jQuery, HelloWorldDevsTysonSteele);
+}(jQuery, HelloWorldDevsTysonSteele));

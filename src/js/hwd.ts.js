@@ -1,7 +1,3 @@
-/**
- * @description This object holds standard scripts for needed functionality on all sites including the request appointment form and orphan management.
- * @constructor
- */
 var HelloWorldDevsTysonSteele = (function($,_) {
 
   /**

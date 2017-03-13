@@ -1,8 +1,26 @@
+//=============================
+//    Dependencies
+//=============================
+@import "bootstrap";
+@import "animate";
+@import "dark";
+@import "font-icons";
+@import "responsive";
+@import "swiper";
+@import "canvas";
+
+//=============================
+//      Custom Styles
+//=============================
 @import "globals/*";
 @import "atoms/*";
 @import "molecules/*";
 @import "organisms/*";
 
+
+//=============================
+//      Shame
+//=============================
 #bf-revz-widget-2613548623 {
   @media screen and (max-width: 400px) {
     max-height: 350px;

@@ -1,13 +1,17 @@
 #slider {
   .swiper-slide.slide1 {
-    background-image: url('/assets/slide1.jpg');
+    background-image: url('/assets/slide-1.jpg');
   }
   .swiper-slide.slide2 {
-    background-image: url('/assets/slide2.jpg');
+    background-image: url('/assets/slide-2.jpg');
   }
-  //.swiper-slide.slide3 {
-  //  background-image: url('/assets/saxton-slide3.jpg');
-  //}
+  .swiper-slide.slide3 {
+    background-image: url('/assets/slide-3.jpg');
+  }
+  .swiper-slide.slide4 {
+    background-image: url('/assets/slide-4.jpg');
+  }
+
 
   .swiper-slide .row {
     transform: translateY(-50%);

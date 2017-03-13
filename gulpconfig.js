@@ -17,16 +17,18 @@ module.exports = {
     enabled: true,
     source: [
       'src/scss/styles.scss',
-      'src/canvas/css/**/*.scss',
     ],
     includePaths: [
-      'src/canvas/css/**/*.scss',
+      'src/canvas/css/',
     ],
     dest: 'build/css/',
+    watchPaths: [
+      'src/scss/**/*.scss'
+    ],
     lint: true,
     // outputStyles maybe 'expanded', 'compressed', 'nested'
     outputStyle: 'expanded',
-    sourceMap: false,
+    sourceMap: true,
     sourceComments: false,
     autoPrefixerBrowsers: [
       'last 2 versions',
@@ -51,9 +53,9 @@ module.exports = {
     includePaths: [
       'src/canvas/js/jquery.js',
       'src/canvas/js/jquery.gmap.js',
-      'src/canvas/js/lodash.js',
       'src/canvas/js/plugins.js',
       'src/canvas/js/functions.js',
+      'src/canvas/js/lodash.js',
     ],
     eslint: {
       enabled: true,
@@ -74,21 +76,21 @@ module.exports = {
   html: {
     enabled: true,
     sources: [
-      'src/index.html',
+      'src/index.twig',
     ],
     dest: 'build/',
-    lint: true,
+    lint: false,
     twig: {
       enabled: true,
-      baseDir: 'src/templates'
+      baseDir: 'src/templates/',
     },
   },
   assets: {
-    pipelines: [
-      {
-        source: 'src/',
-        dest: '',
-      }
+    //clean pipe, no compiling
+    enabled: true,
+    sources: [
+        'src/assets/**/*.*',
     ],
+    dest: 'build/assets/',
   }
 };
