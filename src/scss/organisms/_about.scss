@@ -12,6 +12,7 @@
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
+    border-bottom: 2px solid #85B04B;
     @media screen and (max-width: $width-md) {
       padding-bottom: 0;
     }
@@ -40,6 +41,9 @@
       background-repeat: no-repeat;
       @media screen and (max-width: $width-md) {
         background-image: none;
+      }
+      @media screen and (max-width: $width-md) {
+        padding-top: 0;
       }
     }
     &--meredith-adams {
@@ -146,20 +150,4 @@
   .image {
     width: 100%;
   }
-}
-
-#video-promo {
-  padding-bottom: 60px;
-  .heading {
-    h2{
-      color: #3A5464;
-    }
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  background-image: url('./../assets/videobg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }

@@ -72,8 +72,7 @@ class Webfaction(object):
     		self.siteConfig.domainName)
 
     def runCmd(self, command):
-        commandAtApp = "cd /home/danlinn/webapps/"+self.siteConfig.appName+" && "+command
-        self.server.system(self.session_id, commandAtApp)
+        self.server.system(self.session_id, command)
 
     def gitClone(self):
         initGit = "cd /home/danlinn/webapps/"+self.siteConfig.appName+" && if [ -e index.html ]; then rm index.html; fi && git clone -q "+self.siteConfig.repoUrl+" ."
