@@ -5,11 +5,11 @@
   $c-menu-trigger: $c-black-blue;
 
   position: absolute;
+  @media screen and (max-width: $width-md) {
+    position: relative;
+  }
+  font-family: $ff-oswald;
 
-
-
-
-font-family: $ff-oswald;
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
@@ -39,7 +39,7 @@ font-family: $ff-oswald;
   //when you scroll down
   &.sticky-header {
     #header-wrap {
-      //background-color: $c-nav-background;
+      background-color: #FFFFFF;
     }
   }
   #logo img {
