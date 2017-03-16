@@ -79,7 +79,7 @@ module.exports = {
       'src/index.twig',
     ],
     dest: 'build/',
-    lint: false,
+    lint: true,
     twig: {
       enabled: true,
       baseDir: 'src/templates/',
