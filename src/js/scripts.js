@@ -9,7 +9,7 @@
   HelloWorldDevsTysonSteele.requestAppointment('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
   // ======= Google Maps =======
-  HelloWorldDevsTysonSteele.googleMap('#google-map5', '33.9527789,-84.337107', '33.9502465,-84.3370638');
+  HelloWorldDevsTysonSteele.googleMap('#google-map5', '35.3978095,-77.961373', '35.3978095,-77.961373');
 
   // ======= Carousels =======
   HelloWorldDevsTysonSteele.marqueeCarousel({ autoplay: false });
