@@ -1,13 +1,13 @@
 #section-insurance {
 
-  $c-no-insurance: $c-btn;
-  $c-sub-header: $c-black-blue;
-  $c-preventative: $c-btn;
-  $c-copy: $c-black-blue;
-  $c-mobile-bg: $c-grey-yellow;
+  $c-no-insurance: #85B04B;
+  $c-sub-header: #3A5464;
+  $c-preventative: #444444;
+  $c-copy: #444444;
+  $c-mobile-bg: #FFFFFF;
 
   padding-top: 50px;
-  background-image: url('/assets/no-insurance-bkgd.jpg');
+  background-image: url('/assets/insurance.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -18,41 +18,42 @@
       text-align: center;
     }
   }
-  .sub-text {
-    line-height: 1.2;
-    &--last {
-      margin-bottom: $spacing-lg;
-    }
-  }
 
-  h2 {
+  .title {
     color: $c-no-insurance;
-    font-family: $ff-advent;
+    text-transform: uppercase;
     font-weight: 400;
     @include font-size(95px, 80px, 55px, 50px, 50px);
     margin-bottom: 0;
   }
-  h4 {
-    @include h3;
-    color: $c-sub-header;
-    font-family: $ff-raleway;
-  }
-  h3 {
-    color: $c-preventative;
-    font-weight: 900;
+  .sub-title {
+    @include font-size(45px,
+                       40px,
+                       35px,
+                       30px,
+                       30px);
     font-family: $ff-lato;
+    color: $c-sub-header;
+  }
+  .care-text {
+    font-family: $ff-lato;
+    color: $c-preventative;
     @include font-size(32px, 30px, 28px, 28px, 20px);
+  }
+  .sub-text {
+    font-family: $ff-lato;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $c-copy;
+    &--last {
+      margin-bottom: $spacing-lg;
+    }
   }
   .btn {
     padding-top: 10px;
     padding-bottom: 10px;
     @include lr-padding(80px, 70px, 60px, 60px, 40px);
     margin-bottom: 100px;
-  }
-  h6 {
-    font-family: $ff-lato;
-    font-weight: 700;
-    color: $c-copy;
   }
 
   //Fix for insurance background on mobile
