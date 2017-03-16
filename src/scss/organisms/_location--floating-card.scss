@@ -1,0 +1,163 @@
+.location-card {
+  background: $c-white;
+  margin: 30px 0;
+  border-radius: 10px;
+  padding-left: 38px;
+  padding-right: 30px;
+  @media (max-width: $width-md) {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  &__bottom {
+    background-color: #7BD1EA;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  a>h6 {
+    font-family: $ff-open;
+    //color: $c-blue-6;
+    padding-bottom: $spacing-md;
+  }
+
+  .btn {
+    margin-bottom: $spacing-sm;
+  }
+
+  &__logo {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-sm;
+    width: 300px;
+  }
+  &__map-link {
+    color: #5b8029;
+    font-family: $ff-lato;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: $lh-sm;
+  }
+  .new-patient-text {
+    color: #4e748b;
+    font-family: $ff-lato;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .new-patient-number {
+    @include h3();
+    @include link-color(#024378);
+    font-weight: 900;
+    font-family: $ff-lato;
+    margin-bottom: 15px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .existing-patient-text {
+    color: #565656;
+    font-weight: 400;
+    font-family: $ff-lato;
+    margin-bottom: 15px;
+  }
+  .existing-patient-number {
+    @include link-color(#565656);
+    font-weight: 700;
+    font-family: $ff-lato;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .docters--wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__docters {
+    color: #535353;
+    font-family: $ff-lato;
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+  &__address {
+    color: #222222;
+    font-family: $ff-lato;
+    font-weight: 700;
+  }
+  &__btn.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (max-width: $width-sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+#google-map5 {
+  height: 700px;
+  @media (max-width: $width-md) {
+    height: 300px;
+  }
+}
+
+#content .floating-card {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  @media (max-width: $width-md) {
+    padding-left: 0;
+    padding-right: 0;
+    position: static;
+    text-align: center;
+    width: 100% !important;
+    margin-left: 0;
+    background-color: $c-white;
+
+  }
+
+  .align-fix {
+    margin-left: -8px;
+  }
+}
+
+.hours-table {
+  //color: $c-grey-location;
+  padding-bottom: $spacing-md;
+  h5 {
+    //color: $c-dark-brown;
+    font-family: $ff-lato;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  th {
+    width: 1px;
+    white-space: nowrap;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  td {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  table {
+    max-width: 250px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    @media (max-width: $width-md) {
+      margin-left: auto;
+    }
+  }
+}
+
+
+#google-map5 {
+  height: 1000px;
+  @media (max-width: $width-md) {
+    height: 300px;
+  }
+}
+
+

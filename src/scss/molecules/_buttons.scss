@@ -4,12 +4,12 @@ button.btn {
   font: 400 !important;
   text-transform: uppercase;
 
-  background-color: $c-btn;
+  background-color: #F19E05;
   color: $c-white;
   //border: 2px solid $c-white;
-  border-radius: 15px;
+  border-radius: 10px;
   &:hover, &:focus {
-    background-color: darken($c-btn, 15% );
+    background-color: darken(#F19E05, 15% );
     text-decoration: none;
     color: $c-white;
   }

@@ -1,0 +1,58 @@
+<section id="section-location" class="content-section location">
+
+    <div class="floating-card">
+        <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 col-md-push-7 floating-card--col-fix">
+                <div class="location-card">
+
+                    <!--Logo-->
+                    <a href="#" class="standard-logo align-fix" data-scrollto="#header" data-offset="60">
+                        <img  src="assets/logo-shadowed.png" alt="{{ mainDoctor }}" class="location-card__logo">
+                    </a>
+
+                    <div class="docters--wrapper">
+                        <p class="location-card__docters">C. Bradley Adams, DDS</p>
+                        <p class="location-card__docters">Meredith Smith Adams, DDS</p>
+                        <p class="location-card__docters">Deborah J. Smith, DDS</p>
+                        <p class="location-card__docters">Emilee Q. Pilkington, DDS</p>
+                    </div>
+
+                    <p class="location-card__address">2300 Wayne Memorial Drive, Suite F<br>Goldsboro, NC 27534</p>
+
+                    <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+                        <h6 class="location-card__map-link underline">Click to view map & directions</h6>
+                    </a>
+
+                    <p class="new-patient-text">New Patient Hotline</p>
+                    <a href="tel:{{ newPhone }}" class="link-no-style new-patient-number">{{ newPhoneNoBreak }}</a>
+
+                    <p class="existing-patient-text">Existing patients: <a href="tel:{{ existingPhone }}" class="link-no-style existing-patient-number">{{ existingPhoneNoBreak }}</a></p>
+
+                    <a class="btn align-fix location-card__btn" data-toggle="modal" data-target="#requestAppointmentForm">Request An Appointment</a>
+
+                    <div class="hours-table">
+                        <h5 class="t400">OFFICE HOURS</h5>
+                        <table >
+                            <tbody>
+                            <tr>
+                                <th class="t400">M-TH:</th>
+                                <td>8:00am - 5:00pm</td>
+                            </tr>
+                            <tr>
+                                <th class="t400">Friday</th>
+                                <td>By Appointment</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <a href="{{ googleMap }}" target="_blank"><div id="google-map5" class="gmap"></div></a>
+
+</section>
