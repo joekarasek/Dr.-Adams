@@ -90,56 +90,7 @@
                 <div class="clearfix"></div>
             </section>
 
-            <div id="requestModalContainer">
-
-                <div class="modal fade" id="requestAppointmentForm" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h3 class="modal-title font-dark-blue">Request Appointment</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-error"></div>
-                            <form id="mail-form" method="post" action="//web-api.tysonsteele.com/v1/webprops/KEY/schedule" >
-                                <h6 >YES! Please contact me to schedule an appointment or answer any questions I might still have:</h6>
-                                <div class="row appointment_input_row form-group">
-                                    <div class="col-xs-4">
-                                        <label for="name">Name:</label>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <input type="text" name="name" id="name" class="form-control appointment_form">
-                                    </div>
-                                </div>
-                                <div class="row appointment_input_row form-group">
-                                    <div class="col-xs-4">
-                                        <label for="confirmed_email">Email:</label>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <input type="email" name="confirmed_email" id="confirmed_email" class="form-control appointment_form">
-                                    </div>
-                                </div>
-                                <div class="row appointment_input_row form-group ">
-                                    <div class="col-xs-4">
-                                        <label for="phone">Phone:</label>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <input type="text" name="phone" id="phone" class="form-control appointment_form">
-                                    </div>
-                                </div>
-                                <div class="center">
-                                    <button type="submit" class="btn form-btn">Request Appointment</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <script type="text/template" id="success_msg">
-                    <p>Congratulations! Dentistry is a big part of a healthy life, and we're excited to be a part of yours. We will
-                        contact you in the next 2 business days to schedule your appointment and to answer any questions you may still have.
-                        Thank you!</p>
-                </script>
-            </div>
+            {% include 'molecules/request-modal.twig' %}
 
         </div>
 
@@ -147,37 +98,7 @@
 
     <!-- Footer
     ============================================= -->
-    <footer id="footer" class="footer ">
-
-        <div class="footer-padding">
-            <div class="container">
-                <div class="flex--wrapper">
-                    <div class="text">
-                        <p class="notd">Copyright &copy; 2017 All Rights Reserved by <a href="http://www.tysonsteele.com/" target="_blank" class="">Tyson<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">&nbsp;</span>Steele<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">&nbsp;</span>Associates</a>.</p>
-                    </div>
-                    <div class="social-media-links">
-                        <a href="https://www.instagram.com/dentistrywithadifference/" target="_blank" class="social-icon si-colored si-instagram">
-                            <i class="icon-instagram"></i>
-                            <i class="icon-instagram"></i>
-                        </a>
-                        <a href="https://www.yelp.com/biz/dentistry-with-a-difference-dunwoody" class="social-icon si-colored si-yelp " target="_blank">
-                            <i class="icon-yelp"></i>
-                            <i class="icon-yelp"></i>
-                        </a>
-                        <a href="https://www.facebook.com/pg/dentistrywithadifference/reviews/?ref=page_internal" target="_blank" class="social-icon si-colored si-facebook ">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=_Rq_xN5cL-A&feature=youtu.be" target="_blank" class="social-icon si-colored si-youtube">
-                            <i class="icon-youtube"></i>
-                            <i class="icon-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer><!-- #footer end -->
+    {% include 'organisms/footer.twig' %}
 
 </div><!-- #wrapper end -->
 

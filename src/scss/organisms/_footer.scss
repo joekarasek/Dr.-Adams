@@ -1,7 +1,7 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #024378;
+  background-color: #4E748B;
   border-top: none;
   a {
     @include link-color($c-white);
@@ -24,11 +24,10 @@
       padding: 20px;
     }
   }
-
-  @include social-media-link('facebook');
-  @include social-media-link('yelp');
-  @include social-media-link('instagram');
-  @include social-media-link('youtube');
+  .tyson-steele-text {
+    font-family: $ff-lato;
+    font-weight: 400;
+  }
 
   .flex--wrapper {
     display: flex;
