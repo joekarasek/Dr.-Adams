@@ -18,4 +18,90 @@
 {# External Links #}
 {% set insuranceLink = 'https://smith-adams-family-dentistry.illumitrac.com/#programs' %}
 
+{% set services = [
+{
+'title': 'Digital X-Rays',
+'titleFull': 'Digital X-Rays (or Digital Radiography)',
+'image': 'digital-xray.jpg',
+'modalTarget': 'digitalxrays',
+'text': ['Our use of digital x-ray technology reduces your radiation exposure and eliminates the use of chemicals. It’s better for you and the environment.',
+    'It\'s also easy for you to see what the doctor sees. Your digital x-ray can be seen on a computer screen located next to your dental chair. This helps you understand your needs and make informed choices about your treatment.'
+]
+},
+{
+'title': 'Crowns & Bridges',
+'titleFull': 'Porcelain Crowns & Bridges',
+'image': 'crowns-and-bridges.jpg',
+'modalTarget': 'crowns-and-bridges',
+'text': ['Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable.',
+    'Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative.'
+]
+},
+{
+'title': 'Mercury-Free',
+'titleFull': 'Mercury-Free Restorations',
+'image': 'mercury-free.jpg',
+'modalTarget': 'mercury-free',
+'text': ['The common silver filling contains mercury. Our doctors use the highest-quality biocompatible, tooth-colored restorations to create healthy, beautiful smiles. Since the composite material adheres directly to the tooth enamel, less preparation of the tooth is required before using it. This means it is more durable and provides a more natural-looking result.']
+},
+{
+'title': 'Cosmetic Dentures',
+'titleFull': 'Cosmetic Dentures',
+'image': 'Dentures.jpg',
+'modalTarget': 'crowns-and-bridges',
+'text': ['A well made denture is not only comfortable and functions properly; it also allows the wearer to smile with confidence, knowing that their smile is no different than it would be with natural teeth. Creating a cosmetic denture is really an art in the hands of a skilled dentist.'
+]
+},
+{
+'title': 'Sealants',
+'titleFull': 'Sealants',
+'image': 'sealants.jpg',
+'modalTarget': 'sealants',
+'text': ['Normal pits and grooves on the chewing surfaces of back teeth can trap food that can’t easily be removed with brushing. A sealant is a tough tooth-colored material that is designed to bond to tooth enamel. These sealants are painted on to the tooth surface to seal these pits and grooves and protect against decay. We recommend applying these to children’s teeth once they have permanent back teeth in place. They can also be useful to adults in some situations.'
+]
+},
+{
+'title': 'Smile-Whitening',
+'titleFull': 'Smile-Whitening',
+'image': 'whitening.jpg',
+'modalTarget': 'whitening',
+'text': ['Many everyday things like coffee, tea and wine can significantly dull teeth. Smile-whitening enables us to significantly brighten your smile for that dazzling white smile you deserve.',
+'Plastic whitening trays will be made from models of your teeth. You will then place a special whitening gel in each tray and wear the trays in your mouth for several hours per day. (Many patients wear their trays after dinner and before bed.) A significant change in tooth color is usually seen in just four to six weeks.'
+]
+},{
+'title': 'Veneers',
+'titleFull': 'Veneers',
+'image': 'veneers.jpg',
+'modalTarget': 'Veneers',
+'text': ['Veneers are very thin porcelain pieces that are custom made to adhere directly to the front of teeth without grinding or shaving. Transform your smile without drilling on your natural teeth!',
+'In the hands of a highly skilled dentist, porcelain laminates can provide you with an incredibly natural, beautiful smile. They are virtually undetectable and can dramatically improve your appearance. They are durable and long-lasting when compared to other cosmetic treatments.
+'
+]
+},{
+'title': 'Invisalign®',
+'titleFull': 'Invisalign® Orthodontics',
+'image': 'invisalign.jpg',
+'modalTarget': 'invisalign',
+'text': ['These “invisible” aligners are the latest in orthodontic technology for adults and teens. Straight teeth and a revitalized smile no longer need to come from a mouth full of unattractive wire and bracket braces. Enhancing self-esteem and physical confidence, invisible braces offer an esthetic and barely visible alternative to conventional wire/bracket braces.',
+'Get the smile you\'ve always wanted with Invisalign® Orthodontics.'
+]
+},{
+'title': 'Crowns & Bridges',
+'titleFull': 'Porcelain Crowns & Bridges',
+'image': 'crowns-and-bridges.jpg',
+'modalTarget': 'crowns-and-bridges',
+'text': ['Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable.',
+'Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative.'
+]
+},
+{
+'title': 'Root Canals',
+'titleFull': 'Root Canals',
+'image': 'root-canals.jpg',
+'modalTarget': 'root-canals',
+'text': ['Root canal therapy is an excellent way to save a tooth that would otherwise die and need to be removed. All teeth that have had root canal therapy must be protected with a crown. This is because teeth that have had the pulp removed are more susceptible to fracture.'
+]
+},
+] %}
+
 {% extends 'layouts/index.twig' %}
