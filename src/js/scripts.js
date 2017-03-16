@@ -25,5 +25,6 @@
       '<img src="assets/carousel-arrow.png" alt="navigation arrow">'
     ]
   });
+  
 
 }(jQuery, HelloWorldDevsTysonSteele));

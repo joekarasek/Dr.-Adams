@@ -58,7 +58,7 @@ module.exports = {
       'src/canvas/js/lodash.js',
     ],
     eslint: {
-      enabled: true,
+      enabled: false,
       sources: [
         'src/js/**/*.js',
       ],
