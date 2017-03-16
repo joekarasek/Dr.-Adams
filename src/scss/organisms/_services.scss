@@ -1,9 +1,4 @@
 #section-services {
-
-  //Colors
-
-
-
   .heading {
     text-align: center;
     h2 {
@@ -24,51 +19,50 @@
     }
   }
 
-  .services--slab {
-    background-image: url('/assets/Services/cosmetic.jpg');
+  .services__slab {
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-bottom: 2px solid #84AF4A;
     @media screen and (max-width: $width-md) {
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 0px;
       background-color: #ffffff;
-      background-image: none;
+      background-image: none !important;
     }
-    h2 {
-      color: #3d893f;
-    }
-  }
-
-  .services-carousel {
-    h5 {
-      text-align: center;
-      color: #024378;
-      font-family: $ff-cardo;
+    .title {
+      font-family: $ff-lato;
       font-weight: 700;
-    }
-  }
-  .services-carousel--wrapper {
-    padding: 0 60px;
-  }
-  .services-carousel--image {
-    @include hover-plus();
-  }
-
-  .service-modal-wrapper {
-    h5 {
-      margin-bottom: 0;
-    }
-    img {
-      max-width: 200px;
-      @media screen and (max-width: $width-sm) {
-        display: none;
+      color: #557C91;
+      &--green {
+        font-family: $ff-oswald;
+        color: #84af4b;
+        @include font-size(55px,
+                40px,
+                35px,
+                30px,
+                30px);
       }
     }
-    .modal-image {
-      text-align: center;
-      margin-bottom: 15px;
+    .copy {
+      color: #535353;
+      font-family: $ff-lato;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    &--smile-makeover {
+      background-image: url('/assets/services/cosmetic.jpg');
+    }
+    &--implant-dentistry {
+      background-image: url('/assets/services/implants.jpg');
+    }
+    &--video-promo {
+      background-image: url('/assets/services/pediatric.jpg');
+      padding-top: 50px;
+      padding-bottom: 50px;
+      @media screen and (max-width: $width-md) {
+        padding-bottom: 0;
+      }
     }
   }
-
 }

@@ -56,6 +56,7 @@ module.exports = {
       'src/canvas/js/plugins.js',
       'src/canvas/js/functions.js',
       'src/canvas/js/lodash.js',
+      'src/canvas/js/hwd.ts.js',
     ],
     eslint: {
       enabled: false,
