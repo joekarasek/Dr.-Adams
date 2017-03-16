@@ -1,32 +1,42 @@
-.services-carousel {
-  &__carousel {
-    h5 {
-      text-align: center;
-      color: #024378;
-      font-family: $ff-cardo;
-      font-weight: 700;
-    }
-  }
-  .services-carousel--wrapper {
-    padding: 0 60px;
-  }
-  .services-carousel--image {
-    @include hover-plus();
-  }
-
-  .service-modal-wrapper {
-    h5 {
-      margin-bottom: 0;
-    }
-    img {
-      max-width: 200px;
-      @media screen and (max-width: $width-sm) {
-        display: none;
+#section-services {
+  .services-carousel {
+    .heading {
+      h2.title {
+        color: #3A5464;
+        margin-bottom: 0;
+        padding-bottom: 0;
       }
     }
-    .modal-image {
-      text-align: center;
-      margin-bottom: 15px;
+    &__carousel {
+      h5 {
+        text-align: center;
+        color: #577E93;
+        font-family: $ff-lato;
+        font-weight: 700;
+      }
+    }
+    .services-carousel--wrapper {
+      padding: 0 15px;
+    }
+    .services-carousel--image {
+      @include hover-plus();
+    }
+
+    .service-modal-wrapper {
+      padding-bottom: 30px;
+      h5 {
+        margin-bottom: 0;
+      }
+      img {
+        max-width: 200px;
+        @media screen and (max-width: $width-sm) {
+          display: none;
+        }
+      }
+      .modal-image {
+        text-align: center;
+        margin-bottom: 15px;
+      }
     }
   }
 }

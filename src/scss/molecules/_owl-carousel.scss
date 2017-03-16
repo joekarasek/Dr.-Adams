@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   margin-top: -30px;
-  right: -65px;
+  right: -35px;
   zoom: 1;
   width: 55px;
   height: 55px;
@@ -29,7 +29,7 @@
   }
 }
 .owl-carousel .owl-nav .owl-prev {
-  left: -65px;
+  left: -35px;
   img {
     -moz-transform: scaleX(-1) translateY(-50%);
     -o-transform: scaleX(-1) translateY(-50%);
@@ -42,11 +42,11 @@
 
 .owl-carousel:hover .owl-nav .owl-next {
   left: auto;
-  right: -65px;
+  right: -35px;
 }
 .owl-carousel:hover .owl-nav .owl-prev {
   opacity: 1;
-  left: -65px;
+  left: -35px;
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
