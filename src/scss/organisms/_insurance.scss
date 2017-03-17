@@ -11,7 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  @media (max-width: $width-sm) {
+  @media (max-width: $width-sm - 1) {
     background-color: $c-mobile-bg;
     background-image: none;
     .row>div {
@@ -23,7 +23,7 @@
     color: $c-no-insurance;
     text-transform: uppercase;
     font-weight: 400;
-    @include font-size(95px, 80px, 55px, 50px, 50px);
+    @include font-size(95px, 80px, 55px, 40px, 35px);
     margin-bottom: 0;
   }
   .sub-title {
@@ -31,7 +31,7 @@
                        40px,
                        35px,
                        30px,
-                       30px);
+                       25px);
     font-family: $ff-lato;
     color: $c-sub-header;
   }
@@ -48,6 +48,9 @@
     &--last {
       margin-bottom: $spacing-lg;
     }
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
   .btn {
     padding-top: 10px;
@@ -59,7 +62,7 @@
   //Fix for insurance background on mobile
   .mobile-insurance-fix {
     display: none;
-    @media (max-width: $width-sm) {
+    @media (max-width: $width-sm - 1) {
       margin-top: -100px;
       display: block;
     }

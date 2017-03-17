@@ -52,12 +52,15 @@
     }
     &--smile-makeover {
       background-image: url('/assets/services/cosmetic.jpg');
+      background-position: center;
     }
     &--implant-dentistry {
       background-image: url('/assets/services/implants.jpg');
+      background-position: center;
     }
     &--video-promo {
       background-image: url('/assets/services/pediatric.jpg');
+      background-position: center;
       padding-top: 50px;
       padding-bottom: 50px;
       @media screen and (max-width: $width-md) {
