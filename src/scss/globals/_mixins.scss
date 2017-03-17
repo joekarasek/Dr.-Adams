@@ -156,7 +156,8 @@
 @mixin social-media-link($name) {
   a.si-#{$name} {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     &:hover {
       text-decoration: none;
     }
