@@ -3666,7 +3666,6 @@ var SEMICOLON = SEMICOLON || {};
 		$cookieNotification = $('#cookie-notification');
 
 	$(document).ready( SEMICOLON.documentOnReady.init );
-	console.log("hello world");
 	$window.load( SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
