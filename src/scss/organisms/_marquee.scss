@@ -2,9 +2,9 @@
   height: 80vh;
   max-height: 800px;
   min-height: 700px;
-  @media (max-width: $width-lg) {
+  @media (min-width: $width-lg - 1) {
     max-height: 800px;
-    min-height: 700px;
+    min-height: 620px;
   }
 
   .swiper-slide.slide1 {
@@ -35,6 +35,9 @@
       font-weight: 400;
       margin-bottom: 5px;
       line-height: 1;
+      @media screen and (min-width: $width-lg - 1) {
+        font-size: 90px;
+      }
     }
     h2 {
       @include font-size(72px, 60px, 55px, 65px, 65px);
@@ -43,14 +46,21 @@
       font-weight: 700;
       line-height: 1.2;
       text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.31);
+      @media screen and (min-width: $width-lg - 1) {
+        line-height: .9;
+      }
     }
-    h5 {
+    h4 {
       font-size: 22px;
       text-transform: uppercase;
       color: #404040;
+      @media screen and (min-width: $width-lg - 1) {
+        margin-bottom: 5px;
+      }
     }
     a {
       margin-left: 5px;
+      margin-bottom: -15px;
     }
   }
   .slide2 {

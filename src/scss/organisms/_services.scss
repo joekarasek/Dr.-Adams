@@ -10,6 +10,9 @@
 
     }
     p {
+      @media screen and (max-width: $width-md) {
+        text-align: left;
+      }
       color: $c-grey;
       padding-bottom: $spacing-md;
       a {

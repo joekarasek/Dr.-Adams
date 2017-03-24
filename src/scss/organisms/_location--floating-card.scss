@@ -159,7 +159,10 @@
 
 
 #google-map5 {
-  height: 1000px;
+  height: 815px;
+  @media (max-width: $width-lg) {
+    height: 780px;
+  }
   @media (max-width: $width-md) {
     height: 300px;
   }
